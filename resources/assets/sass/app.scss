@@ -1,0 +1,424 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Fontsawesome
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+// lightbox2
+@import "~lightbox2/src/css/lightbox.css";
+
+body{
+  font-family: Segoe UI !important;
+}
+
+//header
+#contact-telefoon{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+#contact-nummer{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#contact-nummer:hover {
+  color: #7b7a7a;
+}
+//end header
+
+//navbar
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.navbar{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.nav-item>a{
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+.navbar-nav>li{
+  list-style-position:inside;
+  border-right: 1px solid #f5f8fa;
+  padding: 0px 15px 0px 15px;
+}
+
+.nav-link{
+  color: #f8f9fa;
+  -webkit-transition: background-color, 1s;
+  -moz-transition: background-color, 1s;
+  -o-transition: background-color, 1s;
+  transition: background-color, 1s;
+}
+
+.nav-link:hover{
+  color: black !important;
+}
+
+.nav-link:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .4s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav>li:first-child{
+  padding-left: 0px;
+}
+
+.navbar-nav>li:last-child{
+  border-right: none;
+}
+
+.business-header {
+  min-height: 100px;
+  background: url('/italy.jpg');
+  background-size: cover;
+}
+
+.logo{
+  margin-bottom: 15px;
+}
+
+.fa-phone-navbar{
+  font-size: 24px;
+  color: #fff;
+}
+//end navbar
+
+//footer
+.footer-background-color{
+  background-color: #28a745;
+}
+//end footer
+
+//audio
+#player {
+  height: 0;
+  width: 0;
+}
+
+  .speaker {
+    background: url("/speaker-on.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
+
+//end audio
+
+
+/* Modal Content */
+.modal-dialog{
+  overflow-y: hidden;
+}
+
+.hidden {
+  display: none!important;
+}
+//end modal
+
+.jumbotron{
+  background: url("/shopfront3.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
+  background-attachment: fixed;
+}
+
+.jumbotron-heading{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: Oswald;
+  line-height: 70px;
+  text-shadow: black 0px 0px 1.2px;
+}
+
+.jumbotron .lead{
+  color: #d8d8d8;
+  font-weight: bold;
+  text-shadow: black 0px 0px 3px;
+}
+
+.card-img-top{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.card .card-body{
+  min-height: 200px;
+}
+
+.shadow-white{
+  box-shadow: inset 1px 1.732px 24px 0 rgba(0,0,0,.1);
+}
+
+.prijs-home-page{
+  //font-family: ;
+  font-size: 17px !important;
+  font-weight: bold !important;
+  font-family:"Open Sans", Arial, Helvetica, sans-serif !important;
+  position: absolute !important;
+  bottom: 0;
+}
+
+.green-custom{
+  background-color: #28a745 !important;
+}
+
+.gray-custom{
+  background-color : #e94f3d !important;
+}
+
+.dropdown-toggle:after{
+  display: inline-flex !important;
+}
+
+.nav-link-color{
+  color: #f8f9fa;
+}
+
+.menukaart a {
+  color: black;
+  font-weight: bold;
+}
+
+.flexItem{
+  height: auto;
+  width: 100%;
+}
+
+.flexContainer{
+  background: hsla(0,0%,0%,.1);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin: 1em;
+  width: 300px;
+}
+
+.btn-add{
+  right: 8px;
+  bottom: 9px;
+  position: absolute;
+}
+
+.morecontent span {
+  display: none;
+}
+
+.lees-meer{
+  cursor: pointer;
+}
+
+.lees-meer:hover{
+  color: red;
+}
+
+//Custom css
+.m-t-30{
+  margin-top: 30px;
+}
+
+.m-t-100{
+  margin-top: 100px;
+}
+
+.m-b-100{
+  margin-bottom: 100px;
+}
+
+.std-a{
+  color: #212529;
+}
+
+.custom-title{
+  padding-bottom: 16px;
+}
+
+.m-b-2rem{
+  margin-bottom: 2rem;
+}
+
+.thumbnail-m-r{
+  margin-right: 10px !important;
+}
+
+.first-td{
+  width: 50%;
+}
+
+.btn.btn-sm{
+  padding: 7px 10px 7px 10px !important;
+  font-size: .64rem !important;
+}
+
+.actie{
+  color: #db2c27;
+  font-weight: bold;
+}
+
+.fa .fa-plus{
+  margin-left: 2px;
+}
+
+.fa .fa-minus{
+  margin-right: 2px;
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: inherit;
+}
+
+.actie-div{
+  height: 94.3%;
+}
+
+.badge{
+  background-color: #8e2522;
+}
+
+.order-green{
+  background-color: #0fda3d !important;
+}
+
+.order-red{
+  background-color: #ff6464 !important;
+}
+
+.black-bold{
+  color: black;
+  font-weight: bold;
+}
+
+.red-underlined{
+    text-decoration: underline;
+    color: red;
+}
+
+.product-jumbo{
+  min-height: 150px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.pizza-jumbo{
+  background: url('/pizza-jumbo.jpg');
+  background-position: center center;
+}
+
+.salade-jumbo{
+  background: url('/salade-jumbo.jpg');
+  background-position: center bottom;
+}
+
+.dessert-jumbo{
+  background: url('/dessert-jumbo.jpg');
+  background-position: center center;
+}
+
+.jumbo-text{
+  margin-top: 5%;
+}
+
+//end custom css
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px){
+  .navbar{
+    padding: 20px 0 20px 0;
+  }
+}
+
+@media (max-width: 992px){
+  .navbar-nav > li{
+    border-right: none;
+  }
+
+  .navbar-nav>li:first-child{
+    padding-left: 15px;
+  }
+
+  .product-thumbnail{
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 480px){
+
+}
+
+@media (max-width: 576px){
+  .navbar-nav>li:first-child{
+    padding-left: 15px;
+  }
+
+  .jumbotron{
+    display: none;
+  }
+}
+
+@media (min-width: 992px){
+
+}
+
+// subscribe
+.btn-sub{
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  min-height: 50px;
+  border-radius: 0 20px 20px 0;
+  background: #243c4f;
+  color: #fff;
+  border-bottom-left-radius: 0;
+  position: relative;
+  margin-top: 0px;
+  border: 1px solid transparent;
+}
+
+.input-sub{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  border-color: transparent;
+  border-radius: 20px 0 0 20px;
+}
+
+
