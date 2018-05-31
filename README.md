@@ -6,6 +6,9 @@ Burak Sen
 Pizzeria is een van de grootste projecten, die ik in Laravel heb mogen maken.
 Meer informatie vind je in het project zelf.
 
+### Wat heb ik gebruikt?
+Bootstrap, SASS, lightbox, jquey, seeder, migrations, Google en Stackoverflow
+
 ### functionaliteiten
 ```
 Producten bekijken en beheren (wijzigen, verwijderen en aanmaken)
