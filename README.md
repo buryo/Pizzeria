@@ -6,7 +6,7 @@ Burak Sen
 Pizzeria is een van de grootste projecten, die ik in Laravel heb mogen maken.
 
 ## Shopping Cart
-Hierbij heb ik een classe Cart aangemaakt. Toegevoegde producten worden onthouden in de *sessions*. De classe is niet volledig mijn idee, ik heb het gemaakt met voorbeelden en ideeën die ik op stackoverflow heb gevonden, wel heb ik het zelf uitgebreid en de berekeningen van producten zelf gemaakt.
+Hierbij heb ik een classe Cart aangemaakt. Toegevoegde producten worden onthouden in de '*sessions*'. De classe is niet volledig mijn idee, ik heb het gemaakt met voorbeelden en ideeën die ik op stackoverflow heb gevonden, wel heb ik het zelf uitgebreid en de berekeningen van producten zelf gemaakt.
 
 
 ## Online bekijken
