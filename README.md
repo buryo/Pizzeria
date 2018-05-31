@@ -3,8 +3,8 @@ Laravel Framework 5.6.15
 Burak Sen
 
 ## Uitleg
-Pizzeria is een van de grootste projecten, die ik in Laravel heb mogen maken.
-Meer informatie vind je in het project zelf.
+Pizzeria is een van de grootste projecten, die ik in Laravel heb mogen maken. 
+Meer informatie over de functies vind je in het project zelf, tussen comentaar.
 
 ### Wat heb ik gebruikt?
 Bootstrap, SASS, lightbox, jquey, seeder, migrations, Google en Stackoverflow
