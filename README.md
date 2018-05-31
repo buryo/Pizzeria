@@ -38,5 +38,5 @@ Om de admin beheer te kunnen zien moet je ingelogd zijn.
 3) Wachtwoord : 123456
 
 ## Mijn eigen feedback
-Database normalisatie was niet volledig goed, dit heeft later ook voor een aantal problemen met zich meegenomen. 
+Database normalisatie was niet volledig goed, dit heeft later ook een aantal problemen met zich meegenomen. 
 Bij mijn volgende project (webshop) zal ik een aantal punten wel anders oppakken. Zoals de producten vanuit de database ophalen en niet in de code zelf. Ook ben ik een klein beetje in het Nederlands gaan programmeren, ik weet dat dit fout is, ik probeer het zo veel mogelijk in het Engels te houden.
