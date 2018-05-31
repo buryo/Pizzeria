@@ -17,7 +17,7 @@ Bestelling plaatsen
 ```
 
 ## Shopping Cart
-Hierbij heb ik een classe Cart gebruikt. Toegevoegde producten worden onthouden in de '*sessions*'. De classe is niet volledig mijn eigen idee, ik heb het gemaakt met voorbeelden en ideeën die ik op stackoverflow heb gevonden, wel heb ik het zelf uitgebreid en de berekeningen van producten zelf gemaakt.
+Hierbij heb ik een classe Cart gebruikt. Toegevoegde producten worden onthouden in de '*sessions*'. De classe is niet volledig mijn eigen idee, ik heb het gemaakt met voorbeelden en ideeën die ik op stackoverflow heb gevonden, wel heb ik het stukje code waarbij de producten berekening wordt gedaan zelf gemaakt.
 
 
 ```
