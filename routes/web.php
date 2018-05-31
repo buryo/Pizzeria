@@ -4,19 +4,21 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'ProductsController@getIndex')->name('product.index');
 
-//bestelingen
-Route::group(['prefix' => 'bestelingen'], function () {
+Route::get('/acties', 'ProductsController@getActies')->name('getActies');
+
+//bestellingen
+Route::group(['prefix' => 'bestellingen'], function () {
     Route::group(['middleware' => 'auth'], function () {
-        Route::get('/', 'BestelingenController@index')->name('bestelingen.index');
-        Route::get('/{id}', 'BestelingenController@bestelingProgress')->name('bestellingProgress');
+        Route::get('/', 'BestellingenController@index')->name('bestellingen.index');
+        Route::get('/{id}', 'BestellingenController@bestellingProgress')->name('bestellingProgress');
     });
 });
-//end bestelingen
+//end bestellingen
 
-
+// beheren
 Route::group(['prefix' => 'beheren'], function (){
     Route::group(['middleware' => 'auth'], function (){
-        Route::get('/', 'BeherenController@index')->name('beheren.index');
+    Route::get('/', 'BeherenController@index')->name('beheren.index');
 
         Route::get('/nieuwe-product', 'BeherenController@nieuweProduct')->name('beheren.nieuweProduct');
 
@@ -32,6 +34,7 @@ Route::group(['prefix' => 'beheren'], function (){
 
     });
 });
+//beheren
 
 Route::get('/bestellen/{type}', 'ProductsController@getProductPage')->name('products.getAllProducts');
 
