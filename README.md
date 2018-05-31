@@ -6,7 +6,7 @@ Burak Sen
 Pizzeria is een van de grootste projecten, die ik in Laravel heb mogen maken.
 Meer informatie vind je in het project zelf.
 
-###functionaliteiten
+### functionaliteiten
 Producten bekijken en beheren (wijzigen, verwijderen en aanmaken)
 Bestellingen bekijken en beheren
 Bestelling plaatsen
