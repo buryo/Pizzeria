@@ -7,9 +7,11 @@ Pizzeria is een van de grootste projecten, die ik in Laravel heb mogen maken.
 Meer informatie vind je in het project zelf.
 
 ### functionaliteiten
+```
 Producten bekijken en beheren (wijzigen, verwijderen en aanmaken)
 Bestellingen bekijken en beheren
 Bestelling plaatsen
+```
 
 ## Shopping Cart
 Hierbij heb ik een classe Cart aangemaakt. Toegevoegde producten worden onthouden in de '*sessions*'. De classe is niet volledig mijn idee, ik heb het gemaakt met voorbeelden en ideeën die ik op stackoverflow heb gevonden, wel heb ik het zelf uitgebreid en de berekeningen van producten zelf gemaakt.
