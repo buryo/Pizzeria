@@ -28,11 +28,11 @@ public $totalPrice = 0;
 
 
 ## Online bekijken
-Online bekijken is mogelijk via deze link [Pizzeria](http://pizzeria.bsenn.nl/).
+Online bekijken is mogelijk via deze link [Pizzeria](http://pizzeria.bsenn.nl).
 
 ## Inloggen als admin
 Om de admin beheer te kunnen zien moet je ingelogd zijn. 
 
-1) ga naar de login pagina [Pizzeria Login](http://pizzeria.bsenn.nl/login)
+1) ga naar de login pagina [Pizzeria login](http://pizzeria.bsenn.nl/login)
 2) Gebrukersnaam : admin
 3) Wachtwoord : 123456
