@@ -20,6 +20,9 @@
             @include('layouts.menukaart')
 
             <div class="col-lg-9">
+                <div class="col-md-12 pizza-jumbo product-jumbo">
+
+                </div>
                 <div class="row product-thumbnail">
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow actie-div">
@@ -42,7 +45,7 @@
                                              alt="Card image cap">
                                     </a>
                                     <div class="card-body">
-                                        <h5 class="card-title" style="font-weight: bold">{{$product->name}}</h5>
+                                        <h5 class="card-title" style="font-weight: bold">{{$product->id}}. {{$product->name}}</h5>
                                         <p class="card-text comment more">
                                             @if(strlen($product->description) > 100)
                                                 {{ $product->shortdescription = substr($product->description, 0, 100) . '...' }}

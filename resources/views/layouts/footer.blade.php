@@ -1,4 +1,3 @@
-
 <!--Footer-->
 <footer class="page-footer font-small blue-grey lighten-5 pt-0">
 
@@ -20,7 +19,7 @@
                     <div class="input-group">
                         <input type="email" class="form-control input-sub" placeholder="E-mail">
                         <span class="input-group-btn">
-                            <button class=" btn-sub" type="submit">Inschrijven</button>
+                            <button class="btn-sub" type="submit">Inschrijven</button>
                         </span>
                     </div>
                 </div>
@@ -40,8 +39,8 @@
                 <h6 class="text-uppercase font-weight-bold">
                     <strong>O Sole Mio</strong>
                 </h6>
-                <hr class="green-custom mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>Bij Pizzeria Osolemio kunt u altijd rekenen op de lekkerste
+                <hr class="green-custom mb-4 mt-0 d-inline-block mx-auto">
+                <p>Bij Pizzeria kunt u altijd rekenen op de lekkerste
                     pizza met de meest verse ingredienten!
                     De beste ingredienten in combinatie met een zeer ervaren kok
                     staat bij ons garant voor de beste pizza van Almere!</p>
@@ -53,18 +52,18 @@
                 <h6 class="text-uppercase font-weight-bold">
                     <strong>Producten</strong>
                 </h6>
-                <hr class="green-custom mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <hr class="green-custom mb-4 mt-0 d-inline-block mx-auto">
                 <p>
-                    <a href="#!" class="dark-grey-text">Pizza</a>
+                    <a href="{{route('products.getAllProducts', 'pizza')}}" class="dark-grey-text">Pizza</a>
                 </p>
                 <p>
-                    <a href="#!" class="dark-grey-text">Pasta</a>
+                    <a href="{{route('products.getAllProducts', 'pasta')}}" class="dark-grey-text">Pasta</a>
                 </p>
                 <p>
-                    <a href="#!" class="dark-grey-text">Schotel</a>
+                    <a href="{{route('products.getAllProducts', 'ovenschotel')}}" class="dark-grey-text">Ovenschotel</a>
                 </p>
                 <p>
-                    <a href="#!" class="dark-grey-text">Dranken</a>
+                    <a href="{{route('products.getAllProducts', 'drank')}}" class="dark-grey-text">Dranken</a>
                 </p>
             </div>
             <!--/.Second column-->
@@ -74,18 +73,18 @@
                 <h6 class="text-uppercase font-weight-bold">
                     <strong>Overige</strong>
                 </h6>
-                <hr class="green-custom mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <hr class="green-custom mb-4 mt-0 d-inline-block mx-auto">
                 <p>
-                    <a href="#!" class="dark-grey-text">Mijn account</a>
+                    <a href="#" class="dark-grey-text">Mijn account</a>
                 </p>
                 <p>
-                    <a href="#!" class="dark-grey-text">Contact</a>
+                    <a href="#" class="dark-grey-text">Contact</a>
                 </p>
                 <p>
-                    <a href="#!" class="dark-grey-text">Locatie</a>
+                    <a href="https://goo.gl/maps/tZxE4HP59ky" class="dark-grey-text">Locatie</a>
                 </p>
                 <p>
-                    <a href="#!" class="dark-grey-text">Aanbiedingen</a>
+                    <a href="#" class="dark-grey-text">Aanbiedingen</a>
                 </p>
             </div>
             <!--/.Third column-->
@@ -95,22 +94,22 @@
                 <h6 class="text-uppercase font-weight-bold">
                     <strong>Contact</strong>
                 </h6>
-                <hr class="green-custom mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <hr class="green-custom mb-4 mt-0 d-inline-block mx-auto">
                 <p>
                     <a class="dark-grey-text" href="https://goo.gl/maps/tZxE4HP59ky" target="_blank">
-                        <i class="fa fa-home mr-3"></i> C.V. Eesterenplein 220, 1333 HG Almere-Buiten
+                        <i class="fa fa-home mr-3"></i> C.V. Eesterenveld 345, 1535 HG Almere
                     </a>
                 <p>
                     <a class="dark-grey-text" href="mailto:info@pizzeria-osolemio.nl">
-                        <i class="fa fa-envelope mr-3"></i>info@pizzeria-osolemio.nl
+                        <i class="fa fa-envelope mr-3"></i>info@pizzeria-test.nl
                     </a>
                 <p>
-                    <a class="dark-grey-text" href="tel:(036)5324545">
-                        <i class="fa fa-phone mr-3"></i>(036) 532 45 45
+                    <a class="dark-grey-text" href="tel:(036)12345678">
+                        <i class="fa fa-phone mr-3"></i>(036) 123 12 12
                     </a>
                 <p>
-                    <a class="dark-grey-text" href="fax:(036)5370752">
-                        <i class="fa fa-print mr-3"></i>(036) 537 07 52
+                    <a class="dark-grey-text" href="fax:(036)12345678">
+                        <i class="fa fa-print mr-3"></i>(036) 123 12 12
                     </a>
             </div>
             <!--/.Fourth column-->
@@ -122,8 +121,8 @@
     <!-- Copyright-->
     <div class="footer-copyright py-3 text-center">
         © 2018 Copyright:
-        <a href="http://www.pizzeria-osolemio.nl">
-            <strong>Pizzeria-osolemio.nl</strong>
+        <a href="https://github.com/buryo">
+            <strong>Github Burak</strong>
         </a>
     </div>
     <!--/.Copyright -->

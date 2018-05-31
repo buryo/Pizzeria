@@ -27,7 +27,10 @@
                             <tr>
                                 <th scope="row"></th>
                                 <td class="font-weight-bold">Totaal prijs:
-                                    €{{number_format($totalPrice, 2, '.', ',')}}</td>
+                                    @if($totalPrice <= 9 ? $totalPrice++ : $totalPrice)
+                                        €{{number_format($totalPrice, 2, '.', ',')}}
+                                    @endif
+                                    {{--€{{number_format($totalPrice, 2, '.', ',')}}</td>--}}
                             </tr>
                             </tbody>
                         </table>

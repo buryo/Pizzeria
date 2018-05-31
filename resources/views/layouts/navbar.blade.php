@@ -20,13 +20,20 @@
                                 <a class="nav-link" href="{{route('products.getAllProducts', 'pasta')}}">Pasta</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('products.getAllProducts', 'schotel')}}">Schotels</a>
+                                <a class="nav-link" href="{{route('products.getAllProducts', 'ovenschotel')}}">Ovenschotels</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('products.getAllProducts', 'drank')}}">Dranken</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav text ml-auto">
+                            <li class="nav-item pull-right">
+                                <a class="nav-link" href="{{route('getActies')}}">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    Acties
+                                </a>
+                            </li>
+
                             <li class="nav-item pull-right">
                                 <a class="nav-link" href="{{route('products.shoppingCart')}}">
                                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -45,8 +52,8 @@
                                         </a>
 
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="{{ route('bestelingen.index') }}">
-                                                {{__('Bestelingen')}}
+                                            <a class="dropdown-item" href="{{ route('bestellingen.index') }}">
+                                                {{__('Bestellingen')}}
                                             </a>
 
                                             <a class="dropdown-item" href="{{ route('beheren.index') }}">

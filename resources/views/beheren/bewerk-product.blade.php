@@ -3,7 +3,7 @@
 @section('content')
     <div class="container m-t-100 m-b-100" xmlns="http://www.w3.org/1999/html">
         <h3 class="position-absolute card-title">{{$productData->name}} bewerken</h3>
-        <h4 class="pull-right custom-title"><a class="std-a" href="{{ URL::previous() }}"><i
+        <h4 class="pull-right custom-title"><a class="std-a" href="{{ route('beheren.index') }}"><i
                         class="fa fa-arrow-left"></i> Terug</a></h4>
         <div class="clearfix"></div>
         <hr>
@@ -19,6 +19,7 @@
                 <label for="example-text-input" class="col-3 col-form-label">Soort product</label>
                 <div class="col-9">
                     <select class="form-control" name="type" type="text" >
+                        {{-- not optimized, it is made by the simplest way. --}}
                         <option {{$productData->type == 'pizza' ? 'selected = selected' : ''}} value="pizza">Pizza</option>
                         <option {{$productData->type == 'pasta' ? 'selected = selected' : ''}} value="pasta">Pasta</option>
                         <option {{$productData->type == 'ovenschotel' ? 'selected = selected' : ''}} value="ovenschotel">Ovenschotel</option>

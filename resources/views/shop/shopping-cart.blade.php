@@ -6,6 +6,7 @@
             @include('layouts.menukaart')
             <div class="col-lg-9">
                 <div class="row">
+                    {{-- check if cart has items inside--}}
                     @if(Session::has('cart'))
                         <table class="table table-hover">
                             <thead>
@@ -27,17 +28,22 @@
 
                                     <td class="">
                                         {{--{{ Form::open(['route' => ['changeQuantity', $product['item']['id'], ]]) }}--}}
-                                        <a href="{{route('quantityMinusOne', ['id' => $product['item']['id']])}}"><i class="fa fa-minus" aria-hidden="true"></i></a>
-                                            {{$product['qty']}}
-                                        <a href="{{route('quantityPlusOne', ['id' => $product['item']['id']])}}"><i class="fa fa-plus" aria-hidden="true"></i></a>
-                                            {{--<input type="number" onchange="this.form.submit()" name="quantity" class="form-control" value="{{$product['qty']}}">--}}
+                                        <a href="{{route('quantityMinusOne', ['id' => $product['item']['id']])}}"><i
+                                                    class="fa fa-minus" aria-hidden="true"></i></a>
+                                        {{$product['qty']}}
+                                        <a href="{{route('quantityPlusOne', ['id' => $product['item']['id']])}}"><i
+                                                    class="fa fa-plus" aria-hidden="true"></i></a>
+                                        {{--<input type="number" onchange="this.form.submit()" name="quantity" class="form-control" value="{{$product['qty']}}">--}}
                                         {{--{{ Form::close() }}--}}
                                     </td>
-                                    <td class="text-center"><strong>€ {{number_format($product['item']['price'], 2, '.', ',')}}</strong>
+                                    <td class="text-center">
+                                        <strong>€ {{number_format($product['item']['price'], 2, '.', ',')}}</strong>
                                     </td>
-                                    <td class="text-center"><strong>€ {{number_format($product['price'], 2, '.', ',')}}</strong></td>
+                                    <td class="text-center">
+                                        <strong>€ {{number_format($product['price'], 2, '.', ',')}}</strong></td>
                                     <td class="">
-                                        <a href="{{route('destroyItem', ['id' => $product['item']['id']])}}" type="button" class="btn btn-sm btn-danger">
+                                        <a href="{{route('destroyItem', ['id' => $product['item']['id']])}}"
+                                           type="button" class="btn btn-sm btn-danger">
                                             <span class="glyphicon glyphicon-remove"></span> Verwijderen
                                         </a>
                                     </td>
@@ -46,16 +52,23 @@
                             {{--product--}}
                             <tr>
                                 <td>Bestellingen boven de 9 euro worden gratis thuis bezorgd<br>
-                                    Bij een bestelling boven de 30 euro, een fles wijn gratis!</td>
+                                    Bij een bestelling boven de 30 euro, een fles wijn gratis!
+                                </td>
                                 <td>  </td>
                                 <td>  </td>
                                 <td><h3>Totaal</h3></td>
-                                <td class="text-right"><h3><strong>€{{number_format($totalPrice, 2, '.', ',')}}</strong></h3></td>
+                                <td class="text-right"><h3><strong>
+                                            {{-- Als het totale bedrag lager is dan 9 euro. Komt er 1 euro bezorg kosten bij --}}
+                                            @if($totalPrice <= 9 ? $totalPrice++ : $totalPrice)
+                                                €{{number_format($totalPrice, 2, '.', ',')}}
+                                            @endif
+                                        </strong></h3></td>
                             </tr>
                             <tr>
                                 <td><a href="{{route('destroy')}}" type="button" class="btn btn-danger">
                                         Winkelwagen leeg maken <span class="glyphicon glyphicon-play"></span>
-                                    </a>  </td>
+                                    </a>  
+                                </td>
                                 <td>  </td>
                                 <td>  </td>
                                 <td>
@@ -68,6 +81,7 @@
                             </tbody>
                         </table>
                     @else
+                        {{--if cart is empty--}}
                         <div class="row">
                             <h2>Winkelmandje is leeg!</h2>
                         </div>

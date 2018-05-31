@@ -87,10 +87,10 @@ class BeherenController extends Controller
     {
         $product = $productData = Products::where('id', $id)->first();
 
-        if ($request->hasFile('image')) {
+        if ($request->file('image')) {
             $image = $request->file('image');
             $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $location = public_path('images/products/' . $imageName);
+            $location = '/home/u24550p18816/domains/bsenn.nl/public_html/osolemio/images/products/' . $imageName;
             Image::make($image)->resize(600, 600)->save($location);
             $product->image = $imageName;
         }
@@ -99,6 +99,7 @@ class BeherenController extends Controller
         $product->type = $request->type;
         $product->price = $request->price;
         $product->description = ucfirst($request->description);
+
 
         $product->save();
 

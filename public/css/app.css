@@ -13372,7 +13372,7 @@ body {
 }
 
 .jumbotron {
-  background: url("/shopfront3.JPG");
+  background: url("/images/background-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -13404,7 +13404,7 @@ body {
 }
 
 .card .card-body {
-  min-height: 200px;
+  min-height: 170px;
 }
 
 .shadow-white {
@@ -13424,6 +13424,10 @@ body {
   background-color: #28a745 !important;
 }
 
+footer .green-custom {
+  width: 60px;
+}
+
 .gray-custom {
   background-color: #e94f3d !important;
 }
@@ -13435,7 +13439,7 @@ body {
 }
 
 .nav-link-color {
-  color: #f8f9fa;
+  color: #f5f8fa;
 }
 
 .menukaart a {
@@ -13512,6 +13516,16 @@ body {
   width: 50%;
 }
 
+.order th,
+.order td {
+  font-weight: bold;
+}
+
+.order .fa,
+tr .fa-check-circle {
+  font-size: 22px;
+}
+
 .btn.btn-sm,
 .btn-group-sm > .btn {
   padding: 7px 10px 7px 10px !important;
@@ -13571,6 +13585,18 @@ html [type="button"],
   background-size: cover !important;
 }
 
+.product-jumbo::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 11px;
+  background-position: 50% 0;
+  background-image: url("/triangle.gif");
+  z-index: 2;
+}
+
 .pizza-jumbo {
   background: url("/pizza-jumbo.jpg");
   background-position: center center;
@@ -13588,6 +13614,30 @@ html [type="button"],
 
 .jumbo-text {
   margin-top: 5%;
+}
+
+.oswald-400 {
+  font-family: Oswald;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+}
+
+.snor {
+  background: url("/snor.png");
+}
+
+.nounderline {
+  text-decoration: none;
+}
+
+.nounderline:hover {
+  text-decoration: none;
+}
+
+.flex-shrink-0 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media (min-width: 992px) {
@@ -13640,5 +13690,32 @@ html [type="button"],
   background: rgba(255, 255, 255, 0.6);
   border-color: transparent;
   border-radius: 20px 0 0 20px;
+}
+
+.order-table .th-7 {
+  width: 7%;
+}
+
+.order-table .th-12 {
+  width: 12%;
+}
+
+.order-table .th-14 {
+  width: 14%;
+}
+
+.order-table .th-20 {
+  width: 20%;
+}
+
+.acties-title {
+  color: #28a745 !important;
+  font-weight: bold;
+}
+
+.acties-body {
+  line-height: 29px;
+  font-size: 21px;
+  font-style: normal;
 }
 

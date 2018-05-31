@@ -2,6 +2,10 @@
 
 namespace App;
 
+// Shopping cart class
+// Made Created March 2018
+// Burak Sen
+
 
 class Cart
 {
@@ -23,6 +27,7 @@ class Cart
         $storedItem = ['qty' => 0, 'price' => $item->price, 'item' => $item];
 
         if ($this->items) {
+//            check if item already exists
             if (array_key_exists($id, $this->items)) {
                 $storedItem = $this->items[$id];
             }
@@ -34,24 +39,9 @@ class Cart
         $this->totalPrice += $item->price;
     }
 
-//    public function changeQuantity($data, $id){
-//        $dataInt = (int) $data->quantity;
-//        $thisInt = (int) $this->items[$id]['qty'];
-//        if ($dataInt < $thisInt){
-//            $this->totalQty--;
-//            $this->totalPrice -= $this->items[$id]['item']['price'];
-//        }else{
-//            $this->totalQty++;
-//            $this->totalPrice += $this->items[$id]['item']['price'];
-//        }
-//
-//        $this->items[$id]['qty'] = $data->quantity;
-//        $this->items[$id]['price'] = $data->quantity * $this->items[$id]['item']['price'];
-//
-//    }
-
     public function quantityPlusOne($id)
     {
+//        Only quantity plus one if quantity == 0 or higher
         if ($this->items[$id]['qty'] >= 0) {
             $this->totalQty++;
             $this->items[$id]['qty']++;
@@ -62,13 +52,16 @@ class Cart
 
     public function quantityMinusOne($id)
     {
+//      Turning quantity into an integer
         $thisInt = (int) $this->items[$id]['qty'];
+
         if ($thisInt > 0) {
             $this->totalQty--;
             $this->items[$id]['qty']--;
             $this->totalPrice -= $this->items[$id]['item']['price'];
             $this->items[$id]['price'] = $this->items[$id]['qty'] * $this->items[$id]['item']['price'];
         }elseif ($thisInt <= 0){
+//          if quantity is zero or lower, the item will be destroyed
             $this->totalQty -= $this->items[$id]['qty'];
             $this->totalPrice -= $this->items[$id]['price'];
             unset($this->items[$id]);

@@ -28,4 +28,9 @@ class HomeController extends Controller
         $products = Products::all();
         return view('home', compact('products'));
     }
+
+    public function getActies()
+    {
+        return view('layouts.acties');
+    }
 }

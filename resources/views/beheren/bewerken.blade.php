@@ -17,9 +17,11 @@
                 <tbody>
                 @foreach($products as $product)
                     <tr>
+                        {{-- All selected items will be send within the checkbox[] array--}}
                         <th scope="row"><input type="checkbox" name="checkbox[]"
                                                value="{{$product->id}}"> {{$product->name}}</th>
-                        <td><a href="{{route('beheren.getSelectedProduct',[ 'type' => $type ,'id' => $product->id])}}">Bewerken</a></td>
+                        <td><a href="{{route('beheren.getSelectedProduct',[ 'type' => $type ,'id' => $product->id])}}">Bewerken</a>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>
