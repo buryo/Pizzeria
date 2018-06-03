@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Pizzeria\Http\Controllers;
 
-use App\Cart;
-use App\Products;
-use App\Order;
+use Pizzeria\Cart;
+use Pizzeria\Products;
+use Pizzeria\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Pizzeria\Http\Requests\ShareOrderRequest;
 
 class ProductsController extends Controller
 {
@@ -124,7 +125,7 @@ class ProductsController extends Controller
         return redirect()->route('products.shoppingCart');
     }
 
-    public function postCheckout(Request $data)
+    public function postCheckout(ShareOrderRequest $data)
     {
         if (!Session::has('cart')) {
             return view('shop.shopping-cart');
@@ -145,7 +146,6 @@ class ProductsController extends Controller
 //      Serializing to make it readable for the database
         $order->cart = serialize($cart);
 
-//      Saving order into the database
         $order->save();
 
 //      Unserializing to show it on the page

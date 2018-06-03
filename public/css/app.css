@@ -13640,6 +13640,10 @@ html [type="button"],
       flex-shrink: 0;
 }
 
+.bestellingOke {
+  min-height: 200px;
+}
+
 @media (min-width: 992px) {
   .navbar {
     padding: 20px 0 20px 0;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Pizzeria;
 
 use Illuminate\Database\Eloquent\Model;
 

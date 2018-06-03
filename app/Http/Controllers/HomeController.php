@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Pizzeria\Http\Controllers;
 
-use App\Products;
+use Pizzeria\Products;
 use Illuminate\Http\Request;
-use App\Product;
+use Pizzeria\Product;
 
 class HomeController extends Controller
 {

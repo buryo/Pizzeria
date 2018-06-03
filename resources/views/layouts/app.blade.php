@@ -9,6 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Pizzeria') }}</title>
+    <link href="{{{ asset('favicon.png') }}}" rel="shortcut icon" type="image/x-icon" />
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

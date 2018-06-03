@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Pizzeria'),
 
     /*
     |--------------------------------------------------------------------------
@@ -156,11 +156,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Pizzeria\Providers\AppServiceProvider::class,
+        Pizzeria\Providers\AuthServiceProvider::class,
+        // Pizzeria\Providers\BroadcastServiceProvider::class,
+        Pizzeria\Providers\EventServiceProvider::class,
+        Pizzeria\Providers\RouteServiceProvider::class,
 
     ],
 

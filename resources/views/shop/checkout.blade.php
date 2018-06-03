@@ -44,62 +44,96 @@
                     <hr>
                     {{ Form::open(['files' => true, 'route' => 'checkout']) }}
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-3 col-form-label">Naam</label>
+                        <label for="example-text-input" class="col-3 col-form-label control-label">Naam</label>
                         <div class="col-9">
-                            <input class="form-control" type="text" value=""
+                            <input class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" type="text" value=""
                                    id="example-text-input" name="name" required>
+                            @if(count($errors) > 0)
+                                <span class="help-block text-danger">
+                                    {{ $errors->first('name') }}
+                                </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-3 col-form-label">Tussenvoegsel</label>
+                        <label for="example-text-input" class="col-3 col-form-label control-label">Tussenvoegsel</label>
                         <div class="col-9">
-                            <input class="form-control" type="text" value=""
+                            <input class="form-control {{ $errors->has('tussenvoegsel') ? 'is-invalid' : '' }}" type="text" value=""
                                    id="example-text-input" name="tussenvoegsel">
+                            @if(count($errors) > 0)
+                                <span class="help-block text-danger">
+                                    {{ $errors->first('tussenvoegsel') }}
+                                </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-3 col-form-label">Achternaam</label>
+                        <label for="example-text-input" class="col-3 col-form-label control-label">Achternaam</label>
                         <div class="col-9">
-                            <input class="form-control" type="text" value=""
+                            <input class="form-control {{ $errors->has('surname') ? 'is-invalid' : '' }}" type="text" value=""
                                    id="example-text-input" name="surname">
+                            @if(count($errors) > 0)
+                                <span class="help-block text-danger">
+                                    {{ $errors->first('surname') }}
+                                </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-3 col-form-label">Telefoonnummer</label>
+                        <label for="example-text-input" class="col-3 col-form-label control-label">Telefoonnummer</label>
                         <div class="col-9">
-                            <input class="form-control" type="number"
+                            <input class="form-control {{ $errors->has('phone') ? 'is-invalid' : '' }}" type="text"
                                    id="example-text-input" name="phone" required>
+                            @if(count($errors) > 0)
+                                <span class="help-block text-danger">
+                                    {{ $errors->first('phone') }}
+                                </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-3 col-form-label">Email</label>
+                        <label for="example-text-input" class="col-3 col-form-label control-label">Email</label>
                         <div class="col-9">
-                            <input class="form-control" type="text"
+                            <input class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" type="text"
                                    id="example-text-input" name="email">
+                            @if(count($errors) > 0)
+                                <span class="help-block text-danger">
+                                    {{ $errors->first('email') }}
+                                </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-3 col-form-label">Adres</label>
+                        <label for="example-text-input" class="col-3 col-form-label control-label">Adres</label>
                         <div class="col-9">
-                            <input class="form-control" type="text" placeholder="voorbeeldstraat 15A"
+                            <input class="form-control {{ $errors->has('address') ? 'is-invalid' : '' }}" type="text" placeholder="voorbeeldstraat 15A"
                                    id="example-text-input" name="address" required>
+                            @if(count($errors) > 0)
+                                <span class="help-block text-danger">
+                                    {{ $errors->first('address') }}
+                                </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-3 col-form-label">Postcode</label>
+                        <label for="example-text-input" class="col-3 col-form-label control-label">Postcode</label>
                         <div class="col-9">
-                            <input class="form-control" type="text" placeholder="1333 HG"
+                            <input class="form-control {{ $errors->has('postalcode') ? 'is-invalid' : '' }}" type="text" placeholder="1333 HG"
                                    id="example-text-input" name="postalcode" required>
+                            @if(count($errors) > 0)
+                                <span class="help-block text-danger">
+                                    {{ $errors->first('postalcode') }}
+                                </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-3 col-form-label">Opmerking</label>
+                        <label for="example-text-input" class="col-3 col-form-label control-label">Opmerking</label>
                         <div class="col-9">
-                                    <textarea class="form-control" type="text" placeholder="Extra kaas"
+                                    <textarea class="form-control {{ $errors->has('description') ? 'is-invalid' : '' }}" type="text" placeholder="Extra kaas"
                                               id="example-text-input" name="description"></textarea>
                         </div>
                     </div>
-                    <p class="red-underlined">*Elke extra topping kost +1 euro</p>
                     {{ Form::submit('Bestellen', ['class' => 'btn btn-success pull-right']) }}
                     {{ Form::close() }}
                 </div>
@@ -110,7 +144,7 @@
                         <h2>Winkelmandje is leeg!</h2>
                     </div>
                 @else
-                    <div class="col-12 alert alert-success" style="min-height: 200px">
+                    <div class="col-12 alert alert-success bestellingOke">
                         <h2>Beste {{ucfirst($order->name)}}, bedankt voor het bestellen!</h2>
 
                         <table class="table table-striped">
