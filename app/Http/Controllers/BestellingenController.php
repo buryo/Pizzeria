@@ -1,9 +1,9 @@
 <?php
 
-namespace Pizzeria\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Pizzeria\Order;
+use App\Order;
 
 class BestellingenController extends Controller
 {

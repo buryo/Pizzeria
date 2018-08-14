@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Pizzeria\User::class,
+            'model' => App\User::class,
         ],
 
         // 'users' => [

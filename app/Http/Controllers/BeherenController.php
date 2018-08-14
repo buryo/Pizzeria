@@ -1,8 +1,8 @@
 <?php
 
-namespace Pizzeria\Http\Controllers;
+namespace App\Http\Controllers;
 
-use Pizzeria\Products;
+use App\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Image;

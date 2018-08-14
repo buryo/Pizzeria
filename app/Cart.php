@@ -1,6 +1,6 @@
 <?php
 
-namespace Pizzeria;
+namespace App;
 
 // Shopping cart class
 // Made Created March 2018

@@ -1,13 +1,13 @@
 <?php
 
-namespace Pizzeria\Http\Controllers;
+namespace App\Http\Controllers;
 
-use Pizzeria\Cart;
-use Pizzeria\Products;
-use Pizzeria\Order;
+use App\Cart;
+use App\Products;
+use App\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-use Pizzeria\Http\Requests\ShareOrderRequest;
+use App\Http\Requests\ShareOrderRequest;
 
 class ProductsController extends Controller
 {

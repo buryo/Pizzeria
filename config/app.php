@@ -156,11 +156,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Pizzeria\Providers\AppServiceProvider::class,
-        Pizzeria\Providers\AuthServiceProvider::class,
-        // Pizzeria\Providers\BroadcastServiceProvider::class,
-        Pizzeria\Providers\EventServiceProvider::class,
-        Pizzeria\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
     ],
 
